@@ -22,7 +22,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? connection from [._[:alnum:]-]+ \[[\.[:digit:]]+\] at port [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? creating default_prefs: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? got connection over [/[:alnum:].-]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? handled cleanup of child pid [[:digit:]]+ due to SIGCHLD$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? handled cleanup of child pid ([[:digit:]]+ due to SIGCHLD|\[[[:digit:]]+\] due to SIGCHLD: exit 0)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? server pid: [[:digit:]]{1,5}$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? server successfully spawned child process, pid [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (spamd|check|re(port|voke))\[[[:digit:]]+\]:( spamd:)? using default config for [-._+=[:alnum:]]+(@[-._[:alnum:]]+)?: /[-./_[:alnum:]]+/\.spamassassin/user_prefs$
