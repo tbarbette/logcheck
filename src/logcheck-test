@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Copyright © 2007–2010 Hannes von Haugwitz <hannes@vonhaugwitz.com>
+# Copyright © 2007–2011 Hannes von Haugwitz <hannes@vonhaugwitz.com>
 
 # This file is part of Logcheck
 
@@ -69,8 +69,8 @@ while [ -n "${1:-}" ]; do
                 exit 4
             else
                 RULEFILE="$1"
-                if ! [ -f "$RULEFILE" ] ; then
-                    err "'$RULEFILE' is no regular file"
+                if ! [ -f "$RULEFILE" -o -L "$RULEFILE" ] ; then
+                    err "'$RULEFILE' is nor a regular file nor a symbolic link"
                     exit 5
                 elif ! [ -r "$RULEFILE" ] ; then
                     err "'$RULEFILE' permission denied"
