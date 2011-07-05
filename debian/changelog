@@ -54,6 +54,8 @@ logcheck (1.3.14) unstable; urgency=low
       (closes: #632471)
   * src/logcheck-test:
     - allow symbolic link as rule file
+  * ignore.d.workstation/xlockmore:
+    - applied patch by Libor Polčák: ignore local display
 
   [ Gerfried Fuchs ]
   * Remove myself from uploaders.
