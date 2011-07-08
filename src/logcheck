@@ -662,9 +662,11 @@ fi
 mkdir "$TMPDIR/logoutput" \
     || error "Could not mkdir for log files"
 if [ ! "$LOGFILE" ] && [ -r "$LOGFILES_LIST" ]; then
-    egrep --text -v "(^#|^[[:space:]]*$)" "$LOGFILES_LIST" | while read file; do
+    SAVEIFS=$IFS; IFS=$(echo -en "\n\b");
+    for file in $(egrep --text -v "(^#|^[[:space:]]*$)" "$LOGFILES_LIST"); do
 	logoutput "$file"
     done
+    IFS=$SAVEIFS
 elif [ "$LOGFILE" ]; then
     if [ -f "$LOGFILE" ] && [ -r "$LOGFILE" ]; then
         logoutput "$LOGFILE"
