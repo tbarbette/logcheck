@@ -78,6 +78,9 @@ logcheck (1.3.14) unstable; urgency=low
   * ignore.d.server/ssh:
     - add rule to ignore AllowGroups denial, thanks to Gerald Turner
       (closes: #637923)
+  * ignore.d.server/dovecot:
+    - adjusted rule to match IPv6 addresses, thanks to Gerald Turner
+      (closes: #637916)
   * debian/copyright:
     - updated copyright year to 2011
     - added myself as team member
