@@ -75,6 +75,9 @@ logcheck (1.3.14) unstable; urgency=low
   * ignore.d.server/amavisd-new:
     - adjusted rule to match new output format, thanks to Adrian Lang
       (closes: #624197)
+  * ignore.d.server/ssh:
+    - add rule to ignore AllowGroups denial, thanks to Gerald Turner
+      (closes: #637923)
   * debian/copyright:
     - updated copyright year to 2011
     - added myself as team member

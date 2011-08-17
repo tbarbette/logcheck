@@ -16,6 +16,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [:[:xdigit:].]+: [[:digit:]]+: Disconnect requested by Windows SSH Client\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Server listening on [:[:xdigit:].]+ port [[:digit:]]+\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: User [-_.[:alnum:]]+ from [-_.[:alnum:]]+ not allowed because (listed in Deny|not listed in Allow)Users$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: User [-_.[:alnum:]]+ from [-_.[:alnum:]]+ not allowed because none of user's groups are listed in AllowGroups$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_[[:alnum:]]+\) session opened for user [^[:space:]]+( by ([[:alnum:]-]+)?\(uid=[[:digit:]]+\))?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_unix\) auth could not identify password for \[[-_.[:alnum:]]*\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: \(pam_unix\) check pass; user unknown$
