@@ -10,7 +10,7 @@ logcheck (1.3.14) unstable; urgency=low
   * ignore.d.server/dovecot:
     - allow for arbitrary msgids
     - ignore discarded vacation replies with precedence Bulk and list
-    - ignore notice about managesieve logouts
+    - ignore notice about managesieve logouts (closes: #637918)
   * ignore.d.server/postfix:
     - ignore (temporary) rejects messages when the sender domain is not found
     - ignore verify cache db cleanups
