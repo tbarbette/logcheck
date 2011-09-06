@@ -30,6 +30,7 @@ logcheck (1.3.14) unstable; urgency=low
     - adjusted rule to match serial terminals
   * ignore.d.workstation/kernel:
     - ignore "Spinning up disk" message
+    - ignore "kvm: emulating exchange as write" message
   * ignore.d.server/cron-apt:
     - allow optional whitespace between value and unit, thanks to
       Gabor Kiss (closes: #609649)
