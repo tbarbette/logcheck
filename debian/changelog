@@ -62,6 +62,8 @@ logcheck (1.3.14) unstable; urgency=low
     - deleting ignore.d.server/webmin, package has been removed from debian
   * ignore.d.server/kernel:
     - ignore "kvm: emulating exchange as write" message
+    - allow optional ". Opts: (null)" at the end of "mounted filesystem with
+      (writeback|ordered) data mode" message
 
   [ Gerfried Fuchs ]
   * Remove myself from uploaders.
