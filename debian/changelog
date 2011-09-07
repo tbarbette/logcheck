@@ -33,6 +33,8 @@ logcheck (1.3.14) unstable; urgency=low
     - ignore 'cfg80211: Calling CRDA for country' message
     - ignore 'Monitor-Mwait' messages
     - ignore WLAN 'waiting for beacon' and 'beacon received' messages
+    - allow 'device number' in '(new|reset) (low|full|high) speed USB' and
+      'USB disconnect' messages
   * ignore.d.server/cron-apt:
     - allow optional whitespace between value and unit, thanks to
       Gabor Kiss (closes: #609649)
