@@ -26,6 +26,7 @@ logcheck (1.3.14) unstable; urgency=low
     - allow WPA protocol in 'wpa_action: key_mgmt' message
     - ignore "mode=station" message
     - ignore "Trying to authenticate" message
+    - allow '/run/sendsigs.omit.d' as location for pidfile (closes: #633030)
   * ignore.d.server/login:
     - adjusted rule to match serial terminals
   * ignore.d.workstation/kernel:
