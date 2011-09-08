@@ -103,7 +103,7 @@ logcheck (1.3.14) unstable; urgency=low
   * ignore.d.workstation/kernel:
     - allow '.' in input device name
 
- -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Mon, 04 Jul 2011 17:42:26 +0200
+ -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Thu, 08 Sep 2011 15:32:22 +0200
 
 logcheck (1.3.13) unstable; urgency=low
 
