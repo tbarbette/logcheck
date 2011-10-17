@@ -47,13 +47,15 @@ case "$1" in
 	  adduser --quiet logcheck adm || true
 	fi
 
-	# add logcheck to /etc/aliases
-	if [ -f /etc/aliases ] || [ -L /etc/aliases ]; then
-    if ! grep -qi "^logcheck[[:space:]]*:" /etc/aliases; then
-      echo "logcheck: root" >> /etc/aliases
-      test -x "$(command -v newaliases)" && newaliases || :
+  # add logcheck to /etc/aliases on install; not on upgrade
+  if [ -z "$2" ]; then
+    if [ -f /etc/aliases ] || [ -L /etc/aliases ]; then
+      if ! grep -qi "^logcheck[[:space:]]*:" /etc/aliases; then
+        echo "logcheck: root" >> /etc/aliases
+        test -x "$(command -v newaliases)" && newaliases || :
+      fi
     fi
-	fi
+  fi
 
   # give logcheck system user a real name unless it has one.
   if [ -z "$(getent passwd logcheck | cut -d: -f5)" ]; then
