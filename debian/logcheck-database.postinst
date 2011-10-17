@@ -31,7 +31,7 @@ confdir="/etc/logcheck"
 case "$1" in
   configure)
     # Remove old sarge mv logcheck-data configfiles if unchanged
-    if [ -n "$2" ] && dpkg --compare-versions "$2" lt "1.2.48"; then
+    if dpkg --compare-versions "$2" lt-nl "1.2.48"; then
         proftpd_sum=$(sha1sum '/etc/logcheck/ignore.d.paranoid/proftpd' 2>/dev/null \
             | awk '{print $1}')
         imap_sum=$(sha1sum '/etc/logcheck/ignore.d.paranoid/imap' 2>/dev/null \
