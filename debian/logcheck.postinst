@@ -63,7 +63,7 @@ case "$1" in
   fi
 
 	# Add logcheck mail header on install
-        if [ ! -n "$2" ] && [ ! -f /etc/logcheck/header.txt ]; then
+        if [ -z "$2" ] && [ ! -f /etc/logcheck/header.txt ]; then
           cp -p /usr/share/logcheck/header.txt /etc/logcheck
         fi
 
@@ -72,7 +72,7 @@ case "$1" in
 	chgrp -R logcheck /etc/logcheck || true
 
 	# Set Permissions on install, not upgrade
-	if [ ! -n "$2" ]; then
+	if [ -z "$2" ]; then
           chmod 2750 /etc/logcheck/ignore.d.paranoid || true
           chmod 2750 /etc/logcheck/ignore.d.workstation || true
           chmod 2750 /etc/logcheck/ignore.d.server || true
