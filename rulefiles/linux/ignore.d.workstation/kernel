@@ -119,10 +119,10 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs: Partition marked readonly; forcing readonly mount$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? UDF-fs INFO UDF: Mounting volume '[_[:alnum:]]+', timestamp [/[:digit:]]+ [:[:digit:]]+ \([[:xdigit:]]+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Unable to identify CD-ROM format\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? FAT: Did not find valid FSINFO signature\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? FAT(-fs \([[:alnum:]]+\))?: Did not find valid FSINFO signature\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])?      Found signature1 0x[[:xdigit:]]+ signature2 0x[[:xdigit:]]+ \(sector = [[:digit:]]+\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? FAT: bogus number of reserved sectors$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? FAT: utf8 is not a recommended IO charset for FAT filesystems, filesystem will be case sensitive!$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? FAT(-fs \([[:alnum:]]+\))?: bogus number of reserved sectors$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? FAT(-fs \([[:alnum:]]+\))?: utf8 is not a recommended IO charset for FAT filesystems, filesystem will be case sensitive!$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? VFS: Can't find a valid FAT filesystem on dev [^[:space:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? VFS: Can't find ext[234] filesystem on dev [^[:space:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? NTFS driver [.[:digit:]]+ \[Flags: R/W MODULE\]\.$
