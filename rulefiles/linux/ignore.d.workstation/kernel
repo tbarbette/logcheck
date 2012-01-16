@@ -31,6 +31,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb.c: USB disconnect on device [.:[:digit:]-]+ address [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb.c: USB device [[:digit:]]+ \(vend/prod [x/[[:digit:]]+\) is not claimed by any active driver\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? USB Mass Storage device found at [[:digit:]]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb-storage [[:digit:]]+-[[:digit:]]+:[[:digit:]]+\.[[:digit:]]+: Quirks match for vid [[:xdigit:]]+ pid [[:xdigit:]]+: [[:xdigit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? usb-storage: (device found at [[:digit:]]|waiting for device to settle before scanning|device scan complete)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? Initializing USB Mass Storage driver\.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? USB Mass Storage support registered\.$
