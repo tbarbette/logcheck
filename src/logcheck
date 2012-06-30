@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2004-2011 Debian Logcheck Team
+# Copyright (C) 2004-2012 Debian Logcheck Team
 #                         <logcheck-devel@alioth.lists.debian.org>
 # Copyright (C) 2002,2003 Jonathan Middleton <jjm@ixtab.org.uk>
 # Copyright (C) 1999-2002 Rene Mayrhofer <rmayr@debian.org>
