@@ -431,7 +431,7 @@ logoutput() {
     if [ -f "$file" ]; then
 	offsetfile="$STATEDIR/offset$(echo "$file" | tr / .)"
 	debug "Running $LOGTAIL on $file"
-	$LOGTAIL -f "$file" -o "$offsetfile" $LOGTAIL_OPTS \
+	$LOGTAIL $LOGTAIL_OPTS -f "$file" -o "$offsetfile" \
 	    >> "$TMPDIR/logoutput/$(basename "$file")" 2>&1 \
 	    || error "Could not run logtail or save output"
     else
@@ -587,7 +587,7 @@ while getopts "$GETOPTS" opt; do
 	    ;;
 	t)
 	    debug "Setting LOGTAIL_OPTS to -t"
-	    LOGTAIL_OPTS=' -t'
+	    LOGTAIL_OPTS='-t'
 	    ;;
 	w)
 	    debug "Setting REPORTLEVEL to workstation"
