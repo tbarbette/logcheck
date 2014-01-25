@@ -1,0 +1,1 @@
+rm_conffile /etc/logcheck/ignore.d.server/webmin 1.3.14~ logcheck-database

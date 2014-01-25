@@ -4,6 +4,7 @@ logcheck (1.3.16) UNRELEASED; urgency=low
     - updated "subsystem request for sftp" rule (closes: #706085)
   * debian/control:
     - removed obsolete DM-Upload-Allowed field
+    - build-depend on debhelper (>= 9)
   * ignore.d.server/smartd:
     - allow additional '[SAT]' field after controller pattern
       (closes: #653444)
@@ -17,6 +18,10 @@ logcheck (1.3.16) UNRELEASED; urgency=low
       - merge two tests into a single lt-nl comparison
   * ignore.d.server/cron-apt:
     - allow '-o quiet=1' in dist-upgrade rule (closes: #717247)
+  * debian/logcheck-database.maintscript: added
+    debian/logcheck-database.preinst: removed
+    - use dpkg-maintscript-helper to remove obsolete config files
+    - dropped handling of config files removed before squeeze release
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Sat, 04 May 2013 07:04:34 +0200
 
