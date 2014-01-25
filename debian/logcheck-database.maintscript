@@ -1,1 +1,2 @@
 rm_conffile /etc/logcheck/ignore.d.server/webmin 1.3.14~ logcheck-database
+rm_conffile /etc/logcheck/ignore.d.server/puppetd 1.3.16~ logcheck-database
