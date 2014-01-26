@@ -5,6 +5,7 @@ logcheck (1.3.16) UNRELEASED; urgency=low
   * debian/control:
     - removed obsolete DM-Upload-Allowed field
     - build-depend on debhelper (>= 9)
+    - bumped to Standards-Version 3.9.5 (no changes necessary)
   * ignore.d.server/smartd:
     - allow additional '[SAT]' field after controller pattern
       (closes: #653444)
