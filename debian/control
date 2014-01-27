@@ -25,7 +25,6 @@ Description: mails anomalies in the system logfiles to the administrator
 Package: logcheck-database
 Architecture: all
 Depends: ${misc:Depends}
-Replaces: logcheck (<= 1.1.1-9), amavisd-new (<= 2:2.6.4-1)
 Description: database of system log rules for the use of log checkers
  This database is part of the Logcheck package, but might be used by others.
  It brings a database of regular expressions for matching system log entries
@@ -34,7 +33,6 @@ Description: database of system log rules for the use of log checkers
 Package: logtail
 Architecture: all
 Depends: perl (>= 5.8.0), ${misc:Depends}
-Replaces: logcheck (<= 1.1.1-9)
 Description: Print log file lines that have not been read (deprecated)
  This program will read in a standard text file and create an
  offset marker when it reads the end. The offset marker is read

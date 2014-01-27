@@ -2,6 +2,7 @@ logcheck (1.3.17) UNRELEASED; urgency=low
 
   * debian/control:
     - updated Homepage field
+    - dropped obsolete Replaces fields
 
  -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Sun, 26 Jan 2014 20:09:26 +0100
 
