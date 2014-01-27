@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 9)
 Build-Depends-Indep: docbook-to-man
 Vcs-Git: git://anonscm.debian.org/logcheck/logcheck.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=logcheck/logcheck.git
-Homepage: http://www.logcheck.org/
+Homepage: http://logcheck.alioth.debian.org/
 
 Package: logcheck
 Architecture: all
