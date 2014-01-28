@@ -3,4 +3,4 @@ usr/bin/logcheck-test
 var/lib/logcheck/
 etc/logcheck/logcheck.logfiles
 etc/logcheck/logcheck.conf
-usr/share/lintian/overrides/logcheck
+debian/header.txt /usr/share/logcheck/
