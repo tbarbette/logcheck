@@ -33,7 +33,7 @@ Description: database of system log rules for the use of log checkers
 Package: logtail
 Architecture: all
 Depends: perl (>= 5.8.0), ${misc:Depends}
-Description: Print log file lines that have not been read (deprecated)
+Description: Print log file lines that have not been read
  This program will read in a standard text file and create an
  offset marker when it reads the end. The offset marker is read
  the next time logtail is run and the text file pointer is moved
