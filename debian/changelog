@@ -1,5 +1,6 @@
 logcheck (1.3.17) UNRELEASED; urgency=low
 
+  [ Hannes von Haugwitz ]
   * debian/control:
     - updated Homepage field
     - dropped obsolete Replaces fields
@@ -12,7 +13,7 @@ logcheck (1.3.17) UNRELEASED; urgency=low
     - changed '#!/bin/bash' to '#!/usr/bin/env bash'
 
   [ Alberto Gonzalez Iniesta ]
-  * ignore.d.workstation:
+  * ignore.d.workstation/kernel:
     - Fix reworded "Caching mode page" messsages. (Closes: #743378)
       Thanks Hagen Fuchs for the patch
 
