@@ -20,6 +20,8 @@ logcheck (1.3.17) UNRELEASED; urgency=low
     - adjust rule to match new URL (closes: #744205)
   * debian/copyright:
     - removed obsolete 'fork' notice
+  * docs/README.Maintainer:
+    - fixed typo (closes: #764336)
 
   [ Alberto Gonzalez Iniesta ]
   * ignore.d.workstation/kernel:

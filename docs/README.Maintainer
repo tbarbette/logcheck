@@ -51,7 +51,7 @@ any files to be parsed.
 If you are planning on adding rules for your package, please check to
 see if we have included them first.  If we already have rules and you
 would like to maintain your own, please let us know before you upload
-so we can avoid filename confilcts.
+so we can avoid filename conflicts.
 
 -- Debian Logcheck Team <logcheck-devel@lists.alioth.debian.org>
 
