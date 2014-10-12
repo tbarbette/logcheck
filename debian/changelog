@@ -2,7 +2,6 @@ logcheck (1.3.17) UNRELEASED; urgency=low
 
   [ Hannes von Haugwitz ]
   * debian/control:
-    - updated Homepage field
     - dropped obsolete Replaces fields
     - removed 'deprecated' notice from logtail's short description
     - bumped to Standards-Version 3.9.6 (no changes necessary)
