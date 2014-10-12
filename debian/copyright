@@ -35,36 +35,3 @@ This software is published under the terms of the GNU general public license,
 version 2 (not later).
 On Debian systems, a copy of the license can normally be found under
 /usr/share/common-licenses/GPL-2.
-
-
-Notes on forks:
----------------
-
-Notice that the freshmeat site (at freshmeat.net/projects/logcheck)
-points to a new version which is not currently related to Debian's logcheck.
-
-In order to clarify the currently available branches forked of the original
-upstream version please see the following graph:
-
-Psionic's version developed by Craig Rowland
-1.1.1 (last release june 1997, stalled)
-  |   (freebsd uses this http://www.freshports.org/security/logcheck/)
-  |
-  |--- 1.1.1-1 - ...... - 1.1.1-13.5      -  1.1.9.0  .... 1.2.12-.
-  |   (first Debian       (last version of  (New maintainer       |
-  |   package release,    Debian package,   converted to native   |
-  |   Rene Mayrhofer,     Rene Mayrhofer    Debian package        |
-  |   may 1999)           june 2002)          Jon Middleton       |
-  |                                           june 2002)          |
-  |                                                               |
-  |   .-----------------------------------------------------------^
-  |   |
-  |   |
-  |   .-- 1.2.13  .... 1.2.17 ...................... 1.2.18
-  |    (New maintainer Steven Kemp, Apr 2003)   (Current maintainer
-  |                                             Todd Troxell, Apr
-  |                                             2004 - logcheck
-  .--- 1.2  - 1.2.1 - 1.2.3                     team formed.)
-      (Doug Hunley, new fork from
-       upstream, June 2003, available at
-       http://doug.hunley.homeip.net/tools/)
