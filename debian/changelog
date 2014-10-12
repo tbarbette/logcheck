@@ -8,6 +8,7 @@ logcheck (1.3.17) UNRELEASED; urgency=low
   * Migrated to dh7 style debian/rules file
   * debian/compat:
     - bumped to dh compatibility level 9
+    - updated copyright year to 2014
   * debian/README.backports: removed (obsolete)
   * src/logcheck:
     - changed '#!/bin/bash' to '#!/usr/bin/env bash'
