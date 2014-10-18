@@ -23,6 +23,8 @@ logcheck (1.3.17) UNRELEASED; urgency=low
     - removed obsolete 'fork' notice
   * docs/README.Maintainer:
     - fixed typo (closes: #764336)
+  * ignore.d.server/ssh:
+    - match key fingerprint when using key exchange auth (closes: #743000)
 
   [ Alberto Gonzalez Iniesta ]
   * ignore.d.workstation/kernel:
