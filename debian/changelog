@@ -1,4 +1,4 @@
-logcheck (1.3.17) UNRELEASED; urgency=low
+logcheck (1.3.17) unstable; urgency=low
 
   [ Hannes von Haugwitz ]
   * debian/control:
@@ -33,7 +33,7 @@ logcheck (1.3.17) UNRELEASED; urgency=low
     - fixed reworded "Caching mode page" message, thanks to Hagen Fuchs for
       the patch (closes: #743378)
 
- -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Sun, 26 Jan 2014 20:09:26 +0100
+ -- Hannes von Haugwitz <hannes@vonhaugwitz.com>  Fri, 24 Oct 2014 23:54:14 +0200
 
 logcheck (1.3.16) unstable; urgency=low
 
