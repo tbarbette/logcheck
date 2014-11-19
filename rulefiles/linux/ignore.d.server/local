@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: .*TLS cipher list
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: hostname [a-zA-Z0-9.]+ does not resolve to address
