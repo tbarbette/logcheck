@@ -45,3 +45,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: syslogin_perform_logout: logout\(\) returned an error$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: warning: /etc/hosts\.(allow|deny), line [[:digit:]]+: can't verify hostname: getaddrinfo\([._[:alnum:]-]+, AF_INET\) failed$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: warning: /etc/hosts\.(allow|deny), line [[:digit:]]+: host name/(name|address) mismatch: [._[:alnum:]-]+ != [._[:alnum:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: fatal: Read from socket failed: Connection reset by peer
