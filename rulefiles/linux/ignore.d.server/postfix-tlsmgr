@@ -1,2 +1,3 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/tlsmgr\[[[:digit:]]+\].*start TLS smtpd session cache cleanup
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/tlsmgr\[[[:digit:]]+\].*(read|write) smtpd TLS cache entry
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/tlsmgr\[[[:digit:]]+\]: (lookup|delete|put) smtpd session id=[A-F0-9]+
