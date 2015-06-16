@@ -3,5 +3,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ amavis\[[[:digit:]]+\]: \([-[:digit:]]+\) NOTICE: Not sending DSN in response to bulk mail from <[^.]*> containing [[:upper:] ]+, mail intentionally dropped$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ amavis\[[[:digit:]]+\]: \([-[:digit:]]+\) INFO: unfolded [[:digit:]]+ illegal all-whitespace continuation lines$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ amavis\[[[:digit:]]+\]: \([-[:digit:]]+\) WARN: address modified \((sender|recipient)\): <[^>]+> -> <[^>]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ amavis\[[[:digit:]]+\]: \([-[:digit:]]+\) Blocked SPAM
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ amavis\[[[:digit:]]+\]: \([-[:digit:]]+\) Passed (CLEAN|SPAM(MY)?)( {RelayedInbound})?
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ amavis\[[[:digit:]]+\]: \([-[:digit:]]+\) Blocked SPAM.*, mail_id: [[:alnum:]]+, Hits: [[:digit:].]+, size: [[:digit:]]+, [[:digit:]]+ ms$
