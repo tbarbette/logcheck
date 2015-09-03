@@ -1,2 +1,3 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [0-9A-F]+: ADSP query.*reply was unresolved CNAME$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-F0-9]+: external host (\[[0-9.]+\]|[a-zA-Z0-9._-]+) attempted to send as [a-zA-Z0-9._-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [0-9A-F]+: s=[a-zA-Z0-9-]+ d=[a-zA-Z0-9.]+ SSL$
