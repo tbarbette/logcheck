@@ -80,3 +80,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: Kernel logging \(proc\) stopped\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? kvm: emulating exchange as write$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[ ]*[[:digit:].]+\] Unhandled fault: [[:alnum:] -]+ \(0x[[:digit:]]+\) at 0x[[:digit:]a-f]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[ ]*[[:digit:].]+\] ICMPv6 checksum failed \[[a-z0-9:.]+ > [a-z0-9:.]+\]$

@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ radvd\[[[:digit:]]+\]: attempting to reread config file$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ radvd\[[[:digit:]]+\]: resuming normal operation$
