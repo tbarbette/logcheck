@@ -1,0 +1,119 @@
+^\[^\w{3} [ :[:digit:]]{11}\] \[error\] \[client [.0-9]+\] File does not exist: /usr/share/pve-manager/images/favicon.ico
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pmxcfs\[[0-9]+\]: \[dcdb\] notice: data verification successful
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pmxcfs\[[0-9]+\]: \[status\] notice: received log
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: received interrupt
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: starting [0-9] worker\(s\)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: starting [0-9]+ worker\(s\)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: worker [0-9]+ finished
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: worker [0-9]+ started
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvestatd\[[0-9]+\]: status update time
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ qm\[[0-9]+\]: <root@pam> update VM [0-9]+: -lock backup
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rrdcached\[[0-9]+\]: flushing old values
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rrdcached\[[0-9]+\]: removing old journal
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rrdcached\[[0-9]+\]: rotating journals
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rrdcached\[[0-9]+\]: started new journal
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: <root@pam> end task .+: OK$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: <root@pam> starting task UPID:[._[:alnum:]-]+:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: Backup job finished successfully$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump
+^[[:alnum:]]{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ [\/\._[:alnum:]-]+\[[0-9]+\]: INFO: Starting Backup of VM [0-9]+ \(qemu\)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: ERROR: Backup of VM [0-9]+ failed - empty device list$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: ERROR: Backup of VM [0-9]+ failed - storage '.+' is disabled$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvestatd\[[0-9]+\]: WARNING: command '.+' failed: got timeout$
+^[[:alnum:]]{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ [\/\._[:alnum:]-]+\[[0-9]+\]: INFO: Finished Backup of VM [0-9]+ \([0-9]+:[0-9]+:[0-9]+\)
+^[[:alnum:]]{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ [\/\._[:alnum:]-]+\[[0-9]+\]: INFO: Starting Backup of VM [0-9]+ \(openvz\)$
+^\[[[:alnum:]]{3} [[:alnum:]]{3} [0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2} [0-9]{4}\] \[error\] \[client [0-9]+.[0-9]+.[0-9]+.[0-9]+\] File does not exist: /usr/share/pve-manager/images/favicon.ico
+^[[:alnum:]]{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ [\/\._[:alnum:]-]+\[[0-9]+\]: <root@pam> successful auth for user 'root@pam'
+
+#Jan 13 06:05:28 proxmox201 pveproxy[268661]: starting 1 worker(s)
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pveproxy\[[0-9]+\]: starting [0-9]+ worker\(s\)
+
+#Jan 13 06:05:28 proxmox201 pveproxy[268661]: worker 306491 finished
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pveproxy\[[0-9]+\]: worker [0-9]+ finished
+
+
+#Jan 13 06:05:28 proxmox201 pveproxy[268661]: worker 309097 started
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pveproxy\[[0-9]+\]: worker [0-9]+ started
+
+#Jan 13 02:09:06 proxmox204 corosync[7663]:   [TOTEM ] Retransmit List: 5fbcc3
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ corosync\[[0-9]+\]:   \[TOTEM \] Retransmit List: [0-9a-f]+
+
+#Jan 28 10:50:28 proxmox2 pvedaemon[673486]: <root@pam> end task UPID:proxmox2:1a1a1a1a:1a1a1a1a:1a1a1a1a:vncproxy:113:root@pam: OK
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pvedaemon\[[0-9]+\]: <([^>]+){1}> end task UPID:[._[:alnum:]-]+: OK
+
+#Jan 28 13:31:56 proxmox2 pvedaemon[799166]: INFO: Backup job finished successfully
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pvedaemon\[[0-9]+\]: INFO: Backup job finished successfully
+
+#Jan 18 21:15:16 proxmox2 /USR/SBIN/CRON[383512]: (CRON) error (grandchild #383514 failed with exit status 255)
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ /USR/SBIN/CRON\[[0-9]+\]: \(CRON\) error \(grandchild #[0-9]+ failed with exit status [0-9]+\)
+
+
+#Jan 29 06:39:17 proxmox2 pvedaemon[1013228]: start VM 117: UPID:proxmox2:1a1a1a1a:1a1a1a1a:1a1a1a1a:qmstart:117:root@pam:
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pvedaemon\[[0-9]+\]: start VM [0-9]+: UPID:[._[:alnum:]-]+:
+
+#Jan 29 06:39:17 proxmox2 pvedaemon[970273]: <root@pam> starting task UPID:proxmox2:1a1a1a1a:1a1a1a1a:1a1a1a1a:qmstart:117:root@pam:
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pvedaemon\[[0-9]+\]: <([^>]+){1}> starting task UPID:[._[:alnum:]-]+:
+
+#Jan 29 06:39:19 proxmox2 pvedaemon[970273]: <root@pam> end task UPID:proxmox2:1a1a1a1a:1a1a1a1a:1a1a1a1a:qmstart:117:root@pam: OK
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pvedaemon\[[0-9]+\]: <([^>]+){1}> end task UPID:.+: OK
+
+
+#Feb  1 16:45:28 proxmox2 kernel: CT: 4017: stopped
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ kernel: CT: [0-9]+: stopped
+
+
+#Feb  5 12:25:23 proxmox2 pvedaemon[1026953]: <[^>@]+@pam> successful auth for user 'cons@pve'
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pvedaemon\[[0-9]+\]: <[^>]+> successful auth for user '[^'@]+@pve'
+
+
+
+
+#Feb 01 07:35:02 start download http://download.proxmox.com/appliances/aplinfo.dat.asc
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ download [^ ]+
+
+#Feb 01 07:35:02 starting update
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ update
+
+#Feb 01 07:35:03 download finished: 200 OK
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ finished: [0-9]+ OK
+
+#Feb 01 07:35:03 [GNUPG:] GOODSIG [0-1a-f]+ Proxmox Support Team <support@proxmox.com>
+^\w{3} [ :[:digit:]]{11} \[GNUPG:\] GOODSIG [0-1a-f]+ Proxmox Support Team <[^>]+>
+
+#Feb 01 07:35:03 [GNUPG:] SIG_ID 1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A 2013-07-22 1111111111
+^\w{3} [ :[:digit:]]{11} \[GNUPG:\] SIG_ID [a-z0-1]+ [0-9]+-[0-9]+-[0-9]+ [0-9]+
+
+#Feb 01 07:35:03 [GNUPG:] VALIDSIG 1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1 1111-11-11 1111111111 0 4 0 17 2 00 90A8B08AB08BA08BA8A08AB08BA08B0A80AB0AB0
+^\w{3} [ :[:digit:]]{11} \[GNUPG:\] VALIDSIG 
+
+#Feb 01 07:35:03 gpg: Good signature from "Proxmox Support Team <support@proxmox.com>"
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+: Good signature from \"Proxmox Support Team <[^>]+>\"
+
+#Feb 01 07:35:03 gpg: Signature made Mon 22 Jul 2013 05:24:34 AM UTC using DSA key ID 1A1A1A1A
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+: Signature made
+
+#Feb 01 07:35:03 signature valid: 1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ valid: 
+
+#Jan 31 07:35:03 update sucessful
+^\w{3} [ :[:digit:]]{11}  update sucessful
+
+#Jan 31 07:35:05 [GNUPG:] GOODSIG 1A1A1A1A1A1A1A1A Turnkey Linux Release Key <release@turnkeylinux.com>
+^\w{3} [ :[:digit:]]{11} \[GNUPG:\] GOODSIG 
+
+#Jan 31 07:35:05 [GNUPG:] SIG_ID 1J1J1J1J1J1J1J1J1J1J1J1J1J1 2013-10-18 1111111111
+^\w{3} [ :[:digit:]]{11} \[GNUPG:\] SIG_ID 
+
+#Jan 31 07:35:05 gpg: Good signature from "Turnkey Linux Release Key <release@turnkeylinux.com>"
+^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+: Good signature from 
+
+#Jan 31 07:35:05 update sucessful
+^\w{3} [ :[:digit:]]{11} update sucessful
+
+
+^\[GNUPG:\] IMPORT_OK
+^\[GNUPG:\] IMPORT_RES
+
+#Feb  6 10:08:29 proxmox2 pvedaemon[980908]: starting vnc proxy UPID:aaaaaaaa:11a1a1a1:1a1a1a1a:1a11a1a1:aaaaaaaa:111:root@pam:
+#^\w{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ pvedaemon\[[0-9]+\]: starting vnc proxy UPID
+
