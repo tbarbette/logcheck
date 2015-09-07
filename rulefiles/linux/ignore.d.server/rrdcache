@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rrdcached\[[0-9]+\]: flushing old values$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rrdcached\[[[:digit:]]+\]: (started new|removing old) journal /var/lib/rrdcached/journal/rrd\.journal.[\.[:digit:]]{17}$
