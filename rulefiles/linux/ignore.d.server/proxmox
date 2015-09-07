@@ -15,7 +15,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: <root@pam> end task .+: OK$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: <root@pam> starting task UPID:[._[:alnum:]-]+:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: Backup job finished successfully$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: NFO: starting new backup job: vzdump
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvemailforward\[[0-9]+\]: forward mail to <.*>$
 ^[[:alnum:]]{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ [\/\._[:alnum:]-]+\[[0-9]+\]: INFO: Starting Backup of VM [0-9]+ \(qemu\)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: ERROR: Backup of VM [0-9]+ failed - empty device list$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: ERROR: Backup of VM [0-9]+ failed - storage '.+' is disabled$
