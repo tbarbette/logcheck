@@ -4,8 +4,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: received interrupt
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: starting [0-9] worker\(s\)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: starting [0-9]+ worker\(s\)
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: worker [0-9]+ finished
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: worker [0-9]+ started
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy)\[[0-9]+\]: worker ([0-9]+ )?(finished|started|exit)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvestatd\[[0-9]+\]: status update time
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ qm\[[0-9]+\]: <root@pam> update VM [0-9]+: -lock backup
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rrdcached\[[0-9]+\]: flushing old values
