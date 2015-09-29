@@ -121,5 +121,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvepw-logger\[[0-9]+\]: received terminate request \(signal\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy)\[[0-9]+\]: send HUP to [0-9]+$ 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy)\[[0-9]+\]: received signal HUP$
- ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: server (closing|shutdown \(restart\))$
- ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump --mailnotification failure --quiet 1 --mailto [a-zA-Z.-]@[a-zA-Z.-]+ --mode snapshot --compress lzo --storage [a-zA-Z.-]+ --all 1$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: server (closing|shutdown \(restart\))$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump --mailnotification failure --quiet 1 --mailto [a-zA-Z.-]+@[a-zA-Z.-]+ --mode snapshot --compress lzo --storage [a-zA-Z.-]+ --all 1$
