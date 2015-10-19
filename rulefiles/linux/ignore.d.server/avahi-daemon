@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ avahi-daemon\[[[:digit:]]+\]: Invalid response packet from host [:.[:xdigit:]]+.$
