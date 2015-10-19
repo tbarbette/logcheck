@@ -1,9 +1,0 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: .*TLS cipher list
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: hostname [a-zA-Z0-9.]+ does not resolve to address
-rsyslogd-2007: action 'action 17' suspended, next retry
-Activating service name='org.freedesktop.systemd1'
-Activating service name='org.freedesktop.login1'
-Activated service 'org.freedesktop.systemd1' failed: Launch helper exited with unknown return code 1
-Activated service 'org.freedesktop.login1' failed: Launch helper exited with unknown return code 1
-action 'action 17' resumed \(module 'builtin:ompipe'\)
-
