@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ colord(\[[0-9]+\])?: (Profile|device|Device) (removed|added): [[:alnum:]_-]+(..)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ colord(\[[0-9]+\])?: Automatic remove of [[:alnum:]_-]+.. from [[:alnum:]_-]+$
