@@ -172,3 +172,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/verify\[[[:digit:]]+\]: cache [-._[:alnum:]/]+ full cleanup: retained=[[:digit:]]+ dropped=[[:digit:]]+ entries$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: (unknown\[[0-9.]+\]|[a-z0-9.-]+\[[0-9.]+\]): save session [a-zA-Z0-9&=]+ to smtpd cache$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: hostname [a-zA-Z0-9._-]+ does not resolve to address [[:digit:].:]+($|: Name or service not known$)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [[:alnum:]+.-]+\[[0-9.]+\]+: SASL login authentication failed: authentication failure$
