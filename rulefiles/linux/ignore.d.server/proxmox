@@ -14,7 +14,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: <root@pam> end task .+: OK$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: <root@pam> starting task UPID:[._[:alnum:]-]+:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: Backup job finished successfully$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: NFO: starting new backup job: vzdump
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump--quiet 1 --compress lzo --mode snapshot --storage nas-backup --mailto [a-zA-Z0-9._-]+@[a-z0-9._-]+ --mailnotification failure --all 1$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvemailforward\[[0-9]+\]: forward mail to <.*>$
 ^[[:alnum:]]{3} [ :[:digit:]]{11} [\._[:alnum:]-]+ [\/\._[:alnum:]-]+\[[0-9]+\]: INFO: Starting Backup of VM [0-9]+ \(qemu\)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: ERROR: Backup of VM [0-9]+ failed - empty device list$
@@ -123,3 +123,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy)\[[0-9]+\]: received signal HUP$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: server (closing|shutdown \(restart\))$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump --mailnotification failure --quiet 1 --mailto [a-zA-Z.-]+@[a-zA-Z.-]+ --mode snapshot --compress lzo --storage [a-zA-Z.-]+ --all 1$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump( --quiet 1| --compress lzo| --mode snapshot| --storage nas-backup| --mailto [a-zA-Z0-9._-]+@[a-z0-9._-]+| --mailnotification failure| --all 1)+$
