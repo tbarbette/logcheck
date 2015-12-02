@@ -2,9 +2,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pmxcfs\[[0-9]+\]: \[dcdb\] notice: data verification successful
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pmxcfs\[[0-9]+\]: \[status\] notice: received log
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: received interrupt
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: starting [0-9] worker\(s\)
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvedaemon\[[0-9]+\]: starting [0-9]+ worker\(s\)
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy)\[[0-9]+\]: worker ([0-9]+ )?(finished|started|exit)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|spiceproxy)\[[0-9]+\]: starting [0-9]+ worker\(s\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: worker ([0-9]+ )?(finished|started|exit)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvestatd\[[0-9]+\]: status update time
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ qm\[[0-9]+\]: <root@pam> update VM [0-9]+: -lock backup
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rrdcached\[[0-9]+\]: flushing old values
@@ -119,8 +118,9 @@
 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvepw-logger\[[0-9]+\]: (starting|stopping) pvefw logger$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pvepw-logger\[[0-9]+\]: received terminate request \(signal\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy)\[[0-9]+\]: send HUP to [0-9]+$ 
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy)\[[0-9]+\]: received signal HUP$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: server (closing|shutdown \(restart\))$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: send HUP to [0-9]+$ 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: received signal (TERM|HUP)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: (stopping|starting|closing) server$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (pvedaemon|pveproxy|spiceproxy)\[[0-9]+\]: server (stopped|closing|shutdown \(restart\))$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump --mailnotification failure --quiet 1 --mailto [a-zA-Z.-]+@[a-zA-Z.-]+ --mode snapshot --compress lzo --storage [a-zA-Z.-]+ --all 1$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ vzdump\[[0-9]+\]: INFO: starting new backup job: vzdump( --quiet 1| --compress lzo| --mode snapshot| --storage nas-backup| --mailto [a-zA-Z0-9._-]+@[a-z0-9._-]+| --mailnotification failure| --all 1)+$
