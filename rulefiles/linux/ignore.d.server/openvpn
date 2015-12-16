@@ -78,4 +78,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:(( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? \[[-_.[:alnum:]]+\])? Inactivity timeout \(--ping-restart\), restarting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:(( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})?( \[[-._[:alnum:]]+\])?)? Peer Connection Initiated with (\[AF_INET6?\])?[[:digit:].]{7,15}:[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Replay-window backtrack occurred \[[[:digit:]]+\]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: [[:alnum:]._-]+/[0-9.]+:[0-9]+ Control Channel: TLSv1.2, cipher TLSv1/SSLv3 AES256-GCM-SHA384, 1024 bit RSA$"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]: [[:alnum:]._-]+/(:?[0-9]{1,3}.){3}[0-9]{1,3}:[0-9]+ Control Channel: TLSv1.2, cipher TLSv1/SSLv3 AES256-GCM-SHA384, 1024 bit RSA$
