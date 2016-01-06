@@ -10,3 +10,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hostapd: [[:alnum:]]+: STA ([0-9a-f]{2}:){5}[0-9a-f]{2} IEEE 802\.11: deauthenticated due to inactivity( [(]timer DEAUTH/REMOVE[)])?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hostapd: [[:alnum:]]+: STA ([0-9a-f]{2}:){5}[0-9a-f]{2} WPA: received EAPOL-Key 2/4 Pairwise with unexpected replay counter$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hostapd: [[:alnum:]]+: STA ([0-9a-f]{2}:){5}[0-9a-f]{2} RADIUS: starting accounting session [[:alnum:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ hostapd: [[:alnum:]]+: STA ([0-9a-f]{2}:){5}[0-9a-f]{2} IEEE 802.11: did not acknowledge authentication response$
+
