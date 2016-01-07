@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-hostnamed\[[[:digit:]]+\]: Warning: nss-myhostname is not installed\. Changing the local hostname might make it unresolveable\. Please install nss-myhostname!$
