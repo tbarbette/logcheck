@@ -2,3 +2,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo: pam_[[:alnum:]]+\(sudo:session\): session opened for user [[:alnum:]-]+ by ([[:alnum:]-]+)?\(uid=[0-9]+\)$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo:[[:space:]]+[_[:alnum:].-]+ : TTY=(unknown|(pts/|tty|vc/)[[:digit:]]+) ; PWD=[^;]+ ; USER=[._[:alnum:]-]+ ; COMMAND=(/(usr|etc|bin|sbin)/|sudoedit ).*$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo:[[:space:]]+[_[:alnum:].-]+ : \(command continued\).*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo:[[:space:]]+[_[:alnum:].-]+ : pam_ssh_agent_auth: matching key found: file/command /etc/ssh/sudo_authorized_keys, line [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo:[[:space:]]+[_[:alnum:].-]+ : pam_ssh_agent_auth: Found matching RSA key: [a-f0-9:]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo:[[:space:]]+[_[:alnum:].-]+ : pam_ssh_agent_auth: Authenticated: `[[:alnum:]]+' as `[[:alnum:]]+' using /etc/ssh/sudo_authorized_keys$
