@@ -5,3 +5,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo:[[:space:]]+[_[:alnum:].-]+ : pam_ssh_agent_auth: matching key found: file/command /etc/ssh/sudo_authorized_keys, line [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo:[[:space:]]+[_[:alnum:].-]+ : pam_ssh_agent_auth: Found matching RSA key: [a-f0-9:]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo:[[:space:]]+[_[:alnum:].-]+ : pam_ssh_agent_auth: Authenticated: `[[:alnum:]]+' as `[[:alnum:]]+' using /etc/ssh/sudo_authorized_keys$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sudo\[[[:digit:]]+\]: pam_ssh_agent_auth: matching key found: file/command /etc/ssh/sudo_authorized_keys, line [0-9]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sudo\[[[:digit:]]+\]: pam_ssh_agent_auth: Found matching RSA key: [a-f0-9:]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sudo\[[[:digit:]]+\]: pam_ssh_agent_auth: Authenticated: `[[:alnum:]]+' as `[[:alnum:]]+' using /etc/ssh/sudo_authorized_keys$
