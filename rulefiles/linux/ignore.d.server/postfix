@@ -60,116 +60,116 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: warning: [^[:space:]]+ offered null AUTH mechanism list$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: warning: mailer loop: best MX for [^[:space:]]+ is local$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: warning: no MX host for [^[:space:]]+ has a valid (A|address) record$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: ((Anonymous|Trusted|Verified) )?TLS connection established (to|from) [^[:space:]]+: (TLSv[0-9.]+|SSLv[23]) with cipher [^[:space:]]+ \([/[:digit:]]+ bits\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: (Peer|Server) certificate could not be verified$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: Unverified: subject_CN=.*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: Verified: subject_CN=.*, issuer=.*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: cert has expired$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate peer name verification failed for [^[:space:]]+: CommonName mis-match:( [._[:alnum:]-]+)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate peer name verification failed for [^[:space:]]+: [[:digit:]]+ dNSNames in certificate found, but none matches
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=10:)?certificate has expired$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=18:)?self[- ]signed certificate$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=19:)?self[- ]signed certificate in certificate chain$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=20:)?unable to get local issuer certificate$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=21:)?unable to verify the first certificate$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=24:)?invalid CA certificate$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=26:)?unsupported certificate purpose$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=27:)?certificate not trusted$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: untrusted issuer /.+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: initializing the server-side TLS engine$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: issuer=[[:space:]]*/O=.*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: setting up TLS connection (to|from) [._[:alnum:]-]+(\[[[:xdigit:].:]{3,39}\](:[[:digit:]]+)?)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: verify error:num=10:certificate has expired$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: verify error:num=18:self signed certificate$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: verify error:num=19:self signed certificate in certificate chain$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: verify error:num=20:unable to get local issuer certificate$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: verify error:num=21:unable to verify the first certificate$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: verify error:num=24:invalid CA certificate$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: verify error:num=26:unsupported certificate purpose$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: verify error:num=27:certificate not trusted$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: verify error:num=2:unable to get issuer certificate$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: (valid_hostname: )?empty hostname$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: (valid_hostname: )?invalid character [[:digit:]]+\(decimal\): .*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: (valid_hostname: )?misplaced delimiter: .$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: (valid_hostname: )?numeric hostname: [.[:digit:]-]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: numeric domain name in resource data of MX record for [._[:alnum:]-]+: [[:xdigit:].:]{3,39}$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: reply length [[:digit:]]+ > buffer length 4096 for name=[^[:space:]]+ type=[A-Z]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: (NOQUEUE|[[:xdigit:]]+): reject: (HE|EH)LO from [^[:space:]]+\[[[:digit:].]{7,15}\]: [45][[:digit:]]{2}( [45](\.[[:digit:]]){2})? <[^[:space:]]*>: Helo command rejected: .+; proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: (NOQUEUE|[[:xdigit:]]+): reject: [[:upper:]]+ from [^[:space:]]+: 550( 5\.1\.[01])? <[^[:space:]]*>: (Sender|Recipient) address rejected: User unknown in ((local|relay) recipient|virtual alias) table;( from=<[^[:space:]]*> to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: (NOQUEUE|[[:xdigit:]]+): reject: [[:upper:]]+ from [^[:space:]]+: 450( 4\.1\.8)? <[^>]*>: Sender address rejected: Domain not found;( from=<[^>]*> to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: (dis)?connect from [^[:space:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: discard: RCPT from [^[:space:]]+: <[^[:space:]]*>: .+; from=[^[:space:]]+ to=[^[:space:]]+ proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: milter-reject: MAIL from [-._[:alnum:]]+\[[.[:digit:]]+\]: 451 4\.(7\.1 Service unavailable|3\.2 AV system temporarily overloaded) - (please )?try (again )?later; proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: milter-reject: MAIL from [^[:space:]]+: .+; from=[^[:space:]]+ proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: milter-reject: RCPT from [-._[:alnum:]]+\[[.[:digit:]]+\]: 554 5\.7\.1 Suspicious recipient address blocked; from=<[^[:space:]]*>( to=<[^[:space:]]+>)? proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: reject: [[:upper:]]+ from [^[:space:]]+: 554( 5\.7\.1)? <[^[:space:]]*>: Relay access denied;( from=<[^[:space:]]*> to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: reject: [[:upper:]]+ from [^[:space:]]+: 554( [[:digit:]]\.[[:digit:]]\.[[:digit:]])? <[^[:space:]]*>: Client host rejected: Access denied;( from=<[^[:space:]]*> to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: NOQUEUE: reject: [[:upper:]]+ from [^[:space:]]+\[[[:digit:].]{7,15}\]: 503 5\.5\.0 <[^[:space:]]*>: Client host rejected: Improper use of SMTP command pipelining; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: OTP unavailable because can't read/write key database /etc/opiekeys: No such file or directory$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\]: -?[[:digit:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: SSL_accept:(before/accept|SSLv[[:digit:]] (read|write|flush)|failed)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: SSL_accept:unknown state$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:alnum:]]+: client=[._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:alnum:]]+: client=[^[:space:]]+, sasl_method=[-[:alnum:]]+, sasl_username=[-_.@[:alnum:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:alnum:]]+: client=[^[:space:]]+, sasl_sender=.*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:alnum:]]+: reject: (CONNECT|RCPT) from [^[:space:]]+: [45][[:digit:]][[:digit:]]( [[:digit:]]\.[[:digit:]]\.[[:digit:]])? Client host rejected: cannot find your hostname, [^[:space:]]+; (from=[^[:space:]]+ to=[^[:space:]]+ )?proto=E?SMTP( helo=[^[:space:]]+)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: (CONNECT|RCPT) from [^[:space:]]+: [45][[:digit:]][[:digit:]]( [45](\.[[:digit:]]){2})? Service unavailable; Client host \[([[:digit:].]{7,15}|[-._[:alnum:]]+)\] blocked using [._[:alnum:]-]+;( .+;)? (from=<[^[:space:]]*> to=<[^[:space:]]+> )?proto=E?SMTP( helo=<[^[:space:]]+>)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: (MAIL|RCPT) from [^[:space:]]+: [45][[:digit:]][[:digit:]]( [45](\.[[:digit:]]){2})? <[^[:space:]]*>: (Sender|Recipient) address rejected: .+; from=<[^[:space:]]*>( to=<[^[:space:]]+>)? proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: RCPT from [^[:space:]]+: [[:digit:]]{3}( [45](\.[[:digit:]]){2})? <[^[:space:]]*>: Relay access denied; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: RCPT from [^[:space:]]+: 4[[:digit:]][[:digit:]]( 4(\.[[:digit:]]){2}) <[^[:space:]]*>: Client host rejected: Greylisted( for [[:digit:]]+ (second|minute)s)?, see https?://[-_.:/[:alnum:]]+\.html?; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: RCPT from [^[:space:]]+: [45][[:digit:]][[:digit:]]( [45](\.[[:digit:]]){2})? <[^[:space:]]*>: Helo command rejected: .+; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: RCPT from [^[:space:]]+: [45][[:digit:]][[:digit:]]( [45](\.[[:digit:]]){2})? Service unavailable; Sender address \[[^[:space:]]+\] blocked using [._[:alnum:]-]+;( .*;)? from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: RCPT from [^[:space:]]+\[[[:digit:].]{7,15}\]: [45][[:digit:]][[:digit:]] <.+>: User unknown in local recipient table; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: [[:upper:]]+ from [^[:space:]]+\[[[:digit:].]{7,15}\]: 503 5\.5\.0 <[[:upper:]]+>: [[:alnum:]]+ command rejected: Improper use of SMTP command pipelining; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: [._[:alnum:]-]+(\[[[:xdigit:].:]{3,39}\](:[[:digit:]]+)?)?: Trusted: subject_CN=[._[:alnum:]-]+, issuer=[ ._[:alnum:]-]+, fingerprint=([[:xdigit:]]{2}:){15,19}[[:xdigit:]]{2}$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: lost connection after [[:upper:]]+( \([[:digit:]]+ bytes\))? from [._[:alnum:]-]+\[(unknown|[[:xdigit:].:]{3,39})\]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: timeout after [-[:upper:]]+( \([[:digit:]]+ bytes\))? from [^[:space:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: too many errors after ([[:upper:]]{4}|END-OF-MESSAGE|UNKNOWN|DATA \(0 bytes\)) from [._[:alnum:]-]+\[[.[:digit:]]+\]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: unable to open Berkeley db /etc/sasldb: No such file or directory$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: ([-._[:alnum:]]+): RBL lookup error: Host or domain name not found\. Name service error for name=\1 type=A: Host not found, try again$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: ([[:xdigit:].:]{3,39})+: address not listed for hostname [^[:space:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: Connection concurrency limit exceeded: [[:digit:]]+ from [-._[:alnum:]]+\[[[:xdigit:].:]{3,39}\] for service (smtp|submission)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: Illegal address syntax from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\] in MAIL command: .*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: Illegal address syntax from [^[:space:]]+ in (MAIL|RCPT) command: .*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: Read failed in network_biopair_interop with errno=[[:digit:]]+: num_read=[-[:digit:]]+, want_read=[[:digit:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: Unable to look up (NS|MX) host [._[:alnum:]-]+ for (Helo command|Sender address) [^[:space:]]+: (Name or service not known|No address associated with hostname)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: Unable to look up (NS|MX) host for [._[:alnum:]-]+: Host not found(, try again)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: Unable to look up MX host [._[:alnum:]-]+ for Sender address [^[:space:]]+: Temporary failure in name resolution$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [.[:digit:]]+: hostname [^[:space:]]+ verification failed: (Host not found|Host name has no address|Name or service not known|Temporary failure in name resolution)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\] sent non-SMTP command: .*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [[:digit:].]{7,15}: hostname [^[:space:]]+ verification failed: Name or service not known$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: malformed domain name in resource data of (MX|CNAME) record for [^[:space:]]+:.*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: network_biopair_interop: error reading [[:digit:]]+ bytes from the network: Connection reset by peer$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: numeric hostname: [[:xdigit:].:]{3,39}$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: numeric result [[[:xdigit:].:]{3,39}]+ in address->name lookup for [^[:space:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: reject: ETRN \[?[._[:alnum:]-]+\]?\.\.\. from [._[:alnum:]-]+\[[[:digit:].]{7,15}\]$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: smtpd_peer_init: [[:xdigit:].:]{3,39}: address not listed for hostname [._[:alnum:]-]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: smtpd_spf_result: unknown SPF result 4 \(unknown\)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning:( smtpd_peer_init:)? [[:xdigit:].:]{3,39}: hostname [^[:space:]]+ verification failed: (Temporary failure in name resolution|Name or service not known|No address associated with hostname)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: begin transaction$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: commit transaction$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: discarding EHLO keywords:( [[:upper:]]+)+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: gethostby\*\.getanswer: asked for "([-_.[:alnum:]]+)", got "\1"$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql auxprop plugin using mysql engine$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin Parse the username [^[:space:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin create statement from (cmusaslsecretCRAM-MD5|userPassword) [^[:space:]]+ [^[:space:]]+
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin doing query select password from [_[:alnum:]]+ where [_[:alnum:]]+='[._@[:alnum:]-]+';?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin try and connect to a host$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin trying to open db '[^[:space:]]+' on host '[^[:space:]]+'$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: sql plugin: no result found$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL3_READ_BYTES:(reason\([[:digit:]]+\)|sslv3 alert (unexpected message|bad certificate)):s3_pkt\.c:[[:digit:]]+:SSL alert number (0|10|42):$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: milter unix:/var/run/clamav/clamav-milter\.ctl: can't read SMFIC_MAIL reply packet header: Connection timed out$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: ((Anonymous|Trusted|Verified) )?TLS connection established (to|from) [^[:space:]]+: (TLSv[0-9.]+|SSLv[23]) with cipher [^[:space:]]+ \([/[:digit:]]+ bits\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: (Peer|Server) certificate could not be verified$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: Unverified: subject_CN=.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: Verified: subject_CN=.*, issuer=.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: cert has expired$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: certificate peer name verification failed for [^[:space:]]+: CommonName mis-match:( [._[:alnum:]-]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: certificate peer name verification failed for [^[:space:]]+: [[:digit:]]+ dNSNames in certificate found, but none matches
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=10:)?certificate has expired$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=18:)?self[- ]signed certificate$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=19:)?self[- ]signed certificate in certificate chain$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=20:)?unable to get local issuer certificate$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=21:)?unable to verify the first certificate$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=24:)?invalid CA certificate$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=26:)?unsupported certificate purpose$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: (num=27:)?certificate not trusted$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: certificate verification failed for [^[:space:]]+: untrusted issuer /.+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: initializing the server-side TLS engine$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: issuer=[[:space:]]*/O=.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: setting up TLS connection (to|from) [._[:alnum:]-]+(\[[[:xdigit:].:]{3,39}\](:[[:digit:]]+)?)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: verify error:num=10:certificate has expired$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: verify error:num=18:self signed certificate$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: verify error:num=19:self signed certificate in certificate chain$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: verify error:num=20:unable to get local issuer certificate$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: verify error:num=21:unable to verify the first certificate$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: verify error:num=24:invalid CA certificate$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: verify error:num=26:unsupported certificate purpose$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: verify error:num=27:certificate not trusted$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: verify error:num=2:unable to get issuer certificate$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: warning: (valid_hostname: )?empty hostname$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: warning: (valid_hostname: )?invalid character [[:digit:]]+\(decimal\): .*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: warning: (valid_hostname: )?misplaced delimiter: .$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: warning: (valid_hostname: )?numeric hostname: [.[:digit:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: warning: numeric domain name in resource data of MX record for [._[:alnum:]-]+: [[:xdigit:].:]{3,39}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: warning: reply length [[:digit:]]+ > buffer length 4096 for name=[^[:space:]]+ type=[A-Z]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: (NOQUEUE|[[:xdigit:]]+): reject: (HE|EH)LO from [^[:space:]]+\[[[:digit:].]{7,15}\]: [45][[:digit:]]{2}( [45](\.[[:digit:]]){2})? <[^[:space:]]*>: Helo command rejected: .+; proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: (NOQUEUE|[[:xdigit:]]+): reject: [[:upper:]]+ from [^[:space:]]+: 550( 5\.1\.[01])? <[^[:space:]]*>: (Sender|Recipient) address rejected: User unknown in ((local|relay) recipient|virtual alias) table;( from=<[^[:space:]]*> to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: (NOQUEUE|[[:xdigit:]]+): reject: [[:upper:]]+ from [^[:space:]]+: 450( 4\.1\.8)? <[^>]*>: Sender address rejected: Domain not found;( from=<[^>]*> to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: (dis)?connect from [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: NOQUEUE: discard: RCPT from [^[:space:]]+: <[^[:space:]]*>: .+; from=[^[:space:]]+ to=[^[:space:]]+ proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: NOQUEUE: milter-reject: MAIL from [-._[:alnum:]]+\[[.[:digit:]]+\]: 451 4\.(7\.1 Service unavailable|3\.2 AV system temporarily overloaded) - (please )?try (again )?later; proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: NOQUEUE: milter-reject: MAIL from [^[:space:]]+: .+; from=[^[:space:]]+ proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: NOQUEUE: milter-reject: RCPT from [-._[:alnum:]]+\[[.[:digit:]]+\]: 554 5\.7\.1 Suspicious recipient address blocked; from=<[^[:space:]]*>( to=<[^[:space:]]+>)? proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: NOQUEUE: reject: [[:upper:]]+ from [^[:space:]]+: 554( 5\.7\.1)? <[^[:space:]]*>: Relay access denied;( from=<[^[:space:]]*> to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: NOQUEUE: reject: [[:upper:]]+ from [^[:space:]]+: 554( [[:digit:]]\.[[:digit:]]\.[[:digit:]])? <[^[:space:]]*>: Client host rejected: Access denied;( from=<[^[:space:]]*> to=<[^[:space:]]+>)? proto=E?SMTP( helo=<[^[:space:]]+>)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: NOQUEUE: reject: [[:upper:]]+ from [^[:space:]]+\[[[:digit:].]{7,15}\]: 503 5\.5\.0 <[^[:space:]]*>: Client host rejected: Improper use of SMTP command pipelining; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: OTP unavailable because can't read/write key database /etc/opiekeys: No such file or directory$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: SSL_accept error from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\]: -?[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: SSL_accept:(before/accept|SSLv[[:digit:]] (read|write|flush)|failed)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: SSL_accept:unknown state$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [[:alnum:]]+: client=[._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [[:alnum:]]+: client=[^[:space:]]+, sasl_method=[-[:alnum:]]+, sasl_username=[-_.@[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [[:alnum:]]+: client=[^[:space:]]+, sasl_sender=.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [[:alnum:]]+: reject: (CONNECT|RCPT) from [^[:space:]]+: [45][[:digit:]][[:digit:]]( [[:digit:]]\.[[:digit:]]\.[[:digit:]])? Client host rejected: cannot find your hostname, [^[:space:]]+; (from=[^[:space:]]+ to=[^[:space:]]+ )?proto=E?SMTP( helo=[^[:space:]]+)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: (CONNECT|RCPT) from [^[:space:]]+: [45][[:digit:]][[:digit:]]( [45](\.[[:digit:]]){2})? Service unavailable; Client host \[([[:digit:].]{7,15}|[-._[:alnum:]]+)\] blocked using [._[:alnum:]-]+;( .+;)? (from=<[^[:space:]]*> to=<[^[:space:]]+> )?proto=E?SMTP( helo=<[^[:space:]]+>)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: (MAIL|RCPT) from [^[:space:]]+: [45][[:digit:]][[:digit:]]( [45](\.[[:digit:]]){2})? <[^[:space:]]*>: (Sender|Recipient) address rejected: .+; from=<[^[:space:]]*>( to=<[^[:space:]]+>)? proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: RCPT from [^[:space:]]+: [[:digit:]]{3}( [45](\.[[:digit:]]){2})? <[^[:space:]]*>: Relay access denied; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: RCPT from [^[:space:]]+: 4[[:digit:]][[:digit:]]( 4(\.[[:digit:]]){2}) <[^[:space:]]*>: Client host rejected: Greylisted( for [[:digit:]]+ (second|minute)s)?, see https?://[-_.:/[:alnum:]]+\.html?; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: RCPT from [^[:space:]]+: [45][[:digit:]][[:digit:]]( [45](\.[[:digit:]]){2})? <[^[:space:]]*>: Helo command rejected: .+; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: RCPT from [^[:space:]]+: [45][[:digit:]][[:digit:]]( [45](\.[[:digit:]]){2})? Service unavailable; Sender address \[[^[:space:]]+\] blocked using [._[:alnum:]-]+;( .*;)? from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: RCPT from [^[:space:]]+\[[[:digit:].]{7,15}\]: [45][[:digit:]][[:digit:]] <.+>: User unknown in local recipient table; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [[:upper:][:digit:]]+: reject: [[:upper:]]+ from [^[:space:]]+\[[[:digit:].]{7,15}\]: 503 5\.5\.0 <[[:upper:]]+>: [[:alnum:]]+ command rejected: Improper use of SMTP command pipelining; from=<[^[:space:]]*> to=<[^[:space:]]+> proto=E?SMTP helo=<[^[:space:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: [._[:alnum:]-]+(\[[[:xdigit:].:]{3,39}\](:[[:digit:]]+)?)?: Trusted: subject_CN=[._[:alnum:]-]+, issuer=[ ._[:alnum:]-]+, fingerprint=([[:xdigit:]]{2}:){15,19}[[:xdigit:]]{2}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: lost connection after [[:upper:]]+( \([[:digit:]]+ bytes\))? from [._[:alnum:]-]+\[(unknown|[[:xdigit:].:]{3,39})\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: timeout after [-[:upper:]]+( \([[:digit:]]+ bytes\))? from [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: too many errors after ([[:upper:]]{4}|END-OF-MESSAGE|UNKNOWN|DATA \(0 bytes\)) from [._[:alnum:]-]+\[[.[:digit:]]+\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: unable to open Berkeley db /etc/sasldb: No such file or directory$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: ([-._[:alnum:]]+): RBL lookup error: Host or domain name not found\. Name service error for name=\1 type=A: Host not found, try again$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: ([[:xdigit:].:]{3,39})+: address not listed for hostname [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: Connection concurrency limit exceeded: [[:digit:]]+ from [-._[:alnum:]]+\[[[:xdigit:].:]{3,39}\] for service (smtp|submission)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: Illegal address syntax from [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\] in MAIL command: .*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: Illegal address syntax from [^[:space:]]+ in (MAIL|RCPT) command: .*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: Read failed in network_biopair_interop with errno=[[:digit:]]+: num_read=[-[:digit:]]+, want_read=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: Unable to look up (NS|MX) host [._[:alnum:]-]+ for (Helo command|Sender address) [^[:space:]]+: (Name or service not known|No address associated with hostname)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: Unable to look up (NS|MX) host for [._[:alnum:]-]+: Host not found(, try again)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: Unable to look up MX host [._[:alnum:]-]+ for Sender address [^[:space:]]+: Temporary failure in name resolution$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: [.[:digit:]]+: hostname [^[:space:]]+ verification failed: (Host not found|Host name has no address|Name or service not known|Temporary failure in name resolution)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: [._[:alnum:]-]+\[[[:xdigit:].:]{3,39}\] sent non-SMTP command: .*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: [[:digit:].]{7,15}: hostname [^[:space:]]+ verification failed: Name or service not known$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: malformed domain name in resource data of (MX|CNAME) record for [^[:space:]]+:.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: network_biopair_interop: error reading [[:digit:]]+ bytes from the network: Connection reset by peer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: numeric hostname: [[:xdigit:].:]{3,39}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: numeric result [[[:xdigit:].:]{3,39}]+ in address->name lookup for [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: reject: ETRN \[?[._[:alnum:]-]+\]?\.\.\. from [._[:alnum:]-]+\[[[:digit:].]{7,15}\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: smtpd_peer_init: [[:xdigit:].:]{3,39}: address not listed for hostname [._[:alnum:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: smtpd_spf_result: unknown SPF result 4 \(unknown\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning:( smtpd_peer_init:)? [[:xdigit:].:]{3,39}: hostname [^[:space:]]+ verification failed: (Temporary failure in name resolution|Name or service not known|No address associated with hostname)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: begin transaction$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: commit transaction$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: discarding EHLO keywords:( [[:upper:]]+)+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: gethostby\*\.getanswer: asked for "([-_.[:alnum:]]+)", got "\1"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: sql auxprop plugin using mysql engine$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: sql plugin Parse the username [^[:space:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: sql plugin create statement from (cmusaslsecretCRAM-MD5|userPassword) [^[:space:]]+ [^[:space:]]+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: sql plugin doing query select password from [_[:alnum:]]+ where [_[:alnum:]]+='[._@[:alnum:]-]+';?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: sql plugin try and connect to a host$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: sql plugin trying to open db '[^[:space:]]+' on host '[^[:space:]]+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: sql plugin: no result found$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL3_READ_BYTES:(reason\([[:digit:]]+\)|sslv3 alert (unexpected message|bad certificate)):s3_pkt\.c:[[:digit:]]+:SSL alert number (0|10|42):$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: milter unix:/var/run/clamav/clamav-milter\.ctl: can't read SMFIC_MAIL reply packet header: Connection timed out$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:xdigit:]]+: replace: header [-[:alnum:]]+: .+: [-[:alnum:]]+: .+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/local\[[[:digit:]]+\]: warning: maildir access problem for UID/GID=[[:digit:]]+/[[:digit:]]+: create [/.[:alnum:]]+: Permission denied$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/local\[[[:digit:]]+\]: warning: perhaps you need to create the maildirs in advance$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: Peer verification: [[:digit:]]+ dNSNames in certificate found, but no one does match [-_.[:alnum:]]+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: (tls_text_name: [-._[:alnum:]]+\[[.[:digit:]]+\]: )?peer certificate has no (subject CN|issuer Organization)$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: SASL authentication failure: .+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [-._[:alnum:]]+\[[.[:digit:]]+\]: SASL (LOGIN|PLAIN|(DIGEST|CRAM)-MD5|APOP) authentication failed(:[ [:alnum:]]*)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: non-SMTP command from [^[:space:]]+\[[[:xdigit:].:]{3,39}\]: .+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: Peer verification: [[:digit:]]+ dNSNames in certificate found, but no one does match [-_.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd?\[[[:digit:]]+\]: warning: (tls_text_name: [-._[:alnum:]]+\[[.[:digit:]]+\]: )?peer certificate has no (subject CN|issuer Organization)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: SASL authentication failure: .+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: [-._[:alnum:]]+\[[.[:digit:]]+\]: SASL (LOGIN|PLAIN|(DIGEST|CRAM)-MD5|APOP) authentication failed(:[ [:alnum:]]*)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: non-SMTP command from [^[:space:]]+\[[[:xdigit:].:]{3,39}\]: .+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/trivial-rewrite\[[[:digit:]]+\]: warning: valid_ipv4_hostaddr: invalid octet count: ?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL23_GET_CLIENT_HELLO:(unknown protocol|http request):s23_srvr\.c:[[:digit:]]+:$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: TLS library problem: [[:digit:]]+:error:[[:xdigit:]]+:SSL routines:SSL23_GET_CLIENT_HELLO:(unknown protocol|http request):s23_srvr\.c:[[:digit:]]+:$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/verify\[[[:digit:]]+\]: cache [-._[:alnum:]/]+ full cleanup: retained=[[:digit:]]+ dropped=[[:digit:]]+ entries$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: (unknown\[[0-9.]+\]|[a-z0-9.-]+\[[0-9.]+\]): save session [a-zA-Z0-9&=]+ to smtpd cache$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: hostname [a-zA-Z0-9._-]+ does not resolve to address [[:digit:].:]+($|: Name or service not known$)
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: [[:alnum:]+.-]+\[[0-9.]+\]+: SASL login authentication failed: authentication failure$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: (unknown\[[0-9.]+\]|[a-z0-9.-]+\[[0-9.]+\]): save session [a-zA-Z0-9&=]+ to smtpd cache$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: hostname [a-zA-Z0-9._-]+ does not resolve to address [[:digit:].:]+($|: Name or service not known$)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/(smtps/|submission/)?smtpd\[[[:digit:]]+\]: warning: [[:alnum:]+.-]+\[[0-9.]+\]+: SASL login authentication failed: authentication failure$
